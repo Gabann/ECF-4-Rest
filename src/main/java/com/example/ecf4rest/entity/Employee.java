@@ -19,7 +19,15 @@ public class Employee
 	String email;
 	String phone;
 	String address;
-	String department;
+
+	@ManyToOne
+	@JoinColumn(name = "department_id")
+	private Department department;
+
+	@ManyToOne
+	@JoinColumn(name = "position_id")
+	private Position position;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id", nullable = false)

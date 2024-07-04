@@ -19,5 +19,7 @@
         <property name="hibernate.connection.autocommit">false</property>
 
         <mapping class="com.example.ecf4rest.entity.Employee"/>
+        <mapping class="com.example.ecf4rest.entity.Department"/>
+        <mapping class="com.example.ecf4rest.entity.Position"/>
     </session-factory>
 </hibernate-configuration>

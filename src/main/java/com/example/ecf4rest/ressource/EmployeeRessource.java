@@ -62,7 +62,7 @@ public class EmployeeRessource
 	@POST
 	@Path("/save")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public void saveEmployee(Employee employee)
+	public void save(Employee employee)
 	{
 		employeeService.saveEmployee(employee);
 	}
@@ -70,14 +70,14 @@ public class EmployeeRessource
 	@POST
 	@Path("/update")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public void updateEmployee(Employee employee)
+	public void update(Employee employee)
 	{
 		employeeService.updateEmployee(employee);
 	}
 
 	@POST
 	@Path("/delete/{id}")
-	public void deleteEmployee(@PathParam("id") Long id)
+	public void deleteById(@PathParam("id") Long id)
 	{
 		employeeService.deletebyId(id);
 	}
