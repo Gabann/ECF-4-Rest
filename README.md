@@ -125,6 +125,7 @@ Run the application with your tomcat configuration using the war-exploded artifa
 [//]: # (    - [ ] Nested Feature)
 
 - [ ] Full test code coverage
+- [ ] Endpoints security with JWT
 
 <div align="right"><a href="#readme-top">back to top</a></div>
 
